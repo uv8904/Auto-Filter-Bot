@@ -42,31 +42,31 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002517228726') 
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://yuvijangra:yuvijangra@cluster0.zhv5sqg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SilentXBotz_files')
 
 # If MULTIPLE_DB Is True Then Fill DATABASE_URI2 Value Else You Will Get Error.
-MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False) # Type True For Turn On MULTIPLE DB FUNTION 
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "True"), False) # Type True For Turn On MULTIPLE DB FUNTION 
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://uvjangra:uvjangra@cluster0.cmjdvgq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_CHANGE_LIMIT = int(environ.get('DB_CHANGE_LIMIT', "432")) 
 
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/')
-UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie_requestss_group')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/hmmmmw876')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/hmmmmw876')
+UPDATE_CHANNEL_LNK = environ.get('UPDATE_CHANNEL_LNK', 'https://t.me/movie_backup_group'')
 
 AUTH_CHANNEL = environ.get("AUTH_CHANNEL", "") # add multiple channels here, separated by single space
 AUTH_REQ_CHANNEL = environ.get('AUTH_REQ_CHANNEL', '') # add multiple channels here, separated by single space
 
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '100'))
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-100'))
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/9ecc5d6e4df5b83424896.jpg")
 
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
-TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/")
-TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/movie_backup_group")
+TUTORIAL_2 = environ.get("TUTORIAL_2", "https://t.me/movie_backup_group")
+TUTORIAL_3 = environ.get("TUTORIAL_3", "https://t.me/movie_backup_group")
 
 SHORTENER_API = environ.get("SHORTENER_API", "")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", "")
@@ -84,7 +84,7 @@ MOVIE_UPDATE_NOTIFICATION = bool(environ.get("MOVIE_UPDATE_NOTIFICATION", False)
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
 MAX_B_TN = environ.get("MAX_B_TN", "8")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
-PORT = environ.get("PORT", "8089")
+PORT = environ.get("PORT", "8080")
 MSG_ALRT = environ.get('MSG_ALRT', 'Share & Support Us ♥️')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') 
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
